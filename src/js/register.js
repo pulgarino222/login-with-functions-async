@@ -19,9 +19,11 @@ formulario.addEventListener("submit",async (e)=>{
 
     let checkEmail=await validateEmail(email)
 
-    if(checkPassword===true&& checkEmail===true){
-        registerUser(username,lastname,email,password)
-    }
+    window.location.href="/" //con esto despues de registrarnos nos lleva al login 
+
+    // if(checkPassword===true&& checkEmail===true){
+    //     registerUser(username,lastname,email,password)
+    // }
 
     //esto es para ir probando si si sirve cada variable donde se guarda la funcion 
     // if(checkEmail===true){
@@ -60,7 +62,7 @@ async function registerUser(username,lastname,email,password){
 
     let newUser= {
         
-            username:username.value,
+            username:username.value.toLowerCase(),
             lastname:lastname.value,
             email:email.value,
             password:password.value
@@ -73,3 +75,5 @@ async function registerUser(username,lastname,email,password){
         body:JSON.stringify(newUser)
     })
 }
+
+

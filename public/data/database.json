@@ -13,6 +13,13 @@
       "lastname": "FELIPE",
       "email": "jcomte23@gmail.com",
       "password": "4"
+    },
+    {
+      "id": "86cb",
+      "username": "laura",
+      "lastname": "werw",
+      "email": "davidmonterrosa52@gmail.com",
+      "password": "2"
     }
   ]
 }
