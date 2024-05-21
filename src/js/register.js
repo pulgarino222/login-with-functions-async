@@ -49,7 +49,6 @@ async function validateEmail(email){
     
     if(data.length ===0){
         return true
-        
     }else{
         return false
     }
